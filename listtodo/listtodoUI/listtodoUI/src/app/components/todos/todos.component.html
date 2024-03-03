@@ -1,0 +1,51 @@
+<div style="background-color:black;"><br>
+  <div class="container">
+    <div class="form">
+        <form>
+          
+            <div class="mb-3">
+              <div class="bruh"><br>
+                <label for="exampleInputEmail1" class="form-label" style="font-size: 40px;font-size: 58px;">Enter the Todo</label><br><hr>
+              </div>
+              
+
+              <label for="exampleInputDescription" class="form-label">ID</label>
+               <input type="text" class="form-control" id="exampleInputDescription" [(ngModel)]="newtodo.id" name="description" autocomplete="off"><br>
+
+               <label for="exampleInputDescription" class="form-label">DESCRIPTION</label>
+               <input type="text" class="form-control" id="exampleInputDescription" [(ngModel)]="newtodo.description" name="description" autocomplete="off"><br>
+               
+               <label for="exampleInputIsCompleted" class="form-label">IS COMPLETED?</label>
+               <input type="text" class="form-control" id="exampleInputIsCompleted" [(ngModel)]="newtodo.isCompleted" name="isCompleted" autocomplete="off"><br>
+            </div>
+
+            <button type="submit" class="btn btn-primary" (click)="addTodo()">Add Task</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="submit" class="btn btn-primary" (click)="editTodo()">Edit Task</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </form>
+    </div>
+    <hr>
+    <div class="row">     
+        <h1>My Todos</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" >ID</th>
+                <th scope="col">DESCRIPTION</th>
+                <th scope="col">IS COMPLETED</th>
+                <th scope="col">Delete Task</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let todo of todos">
+                <th>{{todo.id}}</th>
+                <td>{{todo.description}}</td>
+                <td>{{todo.isCompleted}}</td>
+                <td><a [routerLink]="[]" (click)="deleteTodo(todo.id)" class="hellob" style="text-decoration:wavy ;">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+
+
+</div>

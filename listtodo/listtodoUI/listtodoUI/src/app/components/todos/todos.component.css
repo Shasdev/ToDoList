@@ -1,0 +1,105 @@
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f55b5b; /* Light Grey */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  hr {
+	border: 3px solid rgb(246, 250, 14);
+}
+  .bruh
+  {
+    
+    text-align: center;
+    border-color: rgb(223, 8, 8);
+
+  }
+  /* Form */
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .form label{
+    
+    font-size: 25px;
+    display: block;
+    color: solid black;
+  }
+  
+  .form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form input[type="text"]:focus {
+    border-color: black;
+    background-color: cyan;
+  }
+  
+  .form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000; /* Green */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    border: 3px solid white;
+    background-color: #45a049; /* Darker Green */
+  }
+  
+  /* Todo List */
+  .row {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16.5px;
+  }
+  .hellob:hover{
+    margin:auto;
+    padding: 10px;
+    font-size:larger;
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+  }
+  th, td {
+    border: 1px solid #e71010;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Delete Button */
+  a.delete-btn {
+    color: #f6154d; /* Red */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  a.delete-btn:hover {
+    color: #DD2C00; /* Darker Red */
+    text-decoration: underline; /* Underline on hover */
+  }
+  

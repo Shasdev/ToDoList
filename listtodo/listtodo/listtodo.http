@@ -1,0 +1,6 @@
+@listtodo_HostAddress = http://localhost:5068
+
+GET {{listtodo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
